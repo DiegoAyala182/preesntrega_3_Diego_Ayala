@@ -287,6 +287,22 @@ button:hover .button-text {
   border: 1px solid black;
 }
 
+@media (min-width: 1024px) {
+  .formulario {
+    width: 600px;
+    height: 580px;
+  }
+  .formulario .textarea {
+    height: 400px;
+    margin-top: 40px;
+  }
+  .formulario .button_size {
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+}
 /* SERVICIOS */
 .subtitleServicios {
   color: darkgreen;
@@ -409,7 +425,7 @@ body {
   width: 30px;
 }
 
-/* HEADER DESKTOP */
+/* DESKTOP */
 @media (min-width: 1024px) {
   body {
     display: grid;
@@ -430,11 +446,12 @@ body {
   Footer {
     grid-area: 4/1/4/5;
   }
+  /* HEADER */
   .logoDesktop {
     width: 280px;
     height: 160px;
   }
-  #header_index {
+  header {
     display: grid;
     grid-template-rows: auto auto;
     background-color: #d1d1d1;
@@ -442,7 +459,7 @@ body {
     justify-content: center;
     align-content: center;
   }
-  #header_index .navbar {
+  header .navbar {
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: large;
     display: flex;
@@ -452,7 +469,7 @@ body {
     width: 100vw;
     height: 150px;
   }
-  #header_index .navbar .navbar_ul {
+  header .navbar .navbar_ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -460,14 +477,14 @@ body {
     padding: 0px;
     margin-left: 150px;
   }
-  #header_index .navbar .navbar_ul li {
+  header .navbar .navbar_ul li {
     margin: 2px 0px;
     font-family: "Barlow Semi Condensed", sans-serif;
     list-style: none;
     padding: 0px 20px;
     border-right: 2px solid darkgreen;
   }
-  #header_index .navbar .navbar_ul li .a_navbar {
+  header .navbar .navbar_ul li .a_navbar {
     font-size: 18px;
   }
   /* FOOTER DESKTOP */

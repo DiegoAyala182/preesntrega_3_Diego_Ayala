@@ -80,7 +80,7 @@ body{
     }
 }
 
-/* HEADER DESKTOP */
+/* DESKTOP */
 @media (min-width: 1024px){
     body{
         display: grid;
@@ -96,12 +96,13 @@ body{
     main{ grid-area: 2 / 1 / 3 / 5; }
     Footer{ grid-area: 4 / 1 / 4 / 5; }
 
+    /* HEADER */
     .logoDesktop{
         width: 280px;
         height: 160px;
     }
 
-    #header_index{
+    header{
         display: grid;
         grid-template-rows: auto auto;
         background-color: #d1d1d1;
