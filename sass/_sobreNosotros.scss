@@ -1,0 +1,46 @@
+$main-color: #c4c4c4;
+$sec-color:darkgreen;
+$color-contenedores: #dcdddc;
+$font-main: 'Barlow Semi Condensed', sans-serif;
+
+/* SOBRE NOSOTROS */
+.articleSobreNosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;     
+}
+
+.center_h2{
+        display: flex;
+        justify-content: center;
+    }
+
+.h2nuestraVsion{
+    margin: 50px 0px;
+    color: $sec-color;
+}
+
+.colorGris{
+    background-color: $color-contenedores;
+    opacity: 0.9;
+}
+
+@media (min-width: 1024px){
+
+    .h1_visto{
+        display: flex;
+        justify-content: center;
+        font-family: $font-main;
+        font-size: 50px;
+        text-shadow: -1px 3px 3px $sec-color;
+        color: black;
+        background-color: transparent;
+        margin: 60px 0px 60px 0px;
+    }
+
+    .articleSN{
+        margin-bottom: 20px; 
+    }
+
+}

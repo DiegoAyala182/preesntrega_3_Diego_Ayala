@@ -1,0 +1,71 @@
+$main-color: #c4c4c4;
+$sec-color:darkgreen;
+$color-contenedores: #dcdddc;
+$font-main: 'Barlow Semi Condensed', sans-serif;
+
+/* CONTACTO */
+.sectionForm{
+    display: flex;
+    justify-content: center;
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 20px;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 20px;
+        background-color: #e9e3e3;
+        border-radius: 30px;
+        margin-bottom: 85px;
+
+        .divcontacto{
+            display: flex;
+            justify-content:center;
+            flex-direction: column;
+            text-align: center;
+            margin: 2px 0px;    
+        }
+
+        textarea{
+            display: flex;
+            justify-content: center;
+            margin-top: 12px;    
+            height:200px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+
+            .respuesta{
+                font-family: 'Barlow Semi Condensed', sans-serif;
+                display: inline-block;
+                margin-top: 25px;
+                width: 70px;
+                padding: 3px;
+                border-radius: 6px;
+                border: 1px solid black;    
+                text-align: center;
+                background-color: $color-contenedores;   
+                &:hover{
+                    background-color: rgb(105, 105, 105);
+                    color: $color-contenedores;  
+                }
+
+                input{
+                    height: 25px;
+                    border-radius: 10px;
+                    border: 1px solid black;
+                }
+                
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,64 @@
+$main-color: #c4c4c4;
+$sec-color:darkgreen;
+$color-contenedores: #dcdddc;
+$font-main: 'Barlow Semi Condensed', sans-serif;
+
+/* SERVICIOS */
+.subtitleServicios{
+    color: $sec-color;
+}
+
+.articleservicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .div_servicios{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        row-gap: 5px;
+        border: 1px solid $sec-color;
+        border-radius: 15px;
+        width: 330px;
+        height: 465px;
+        margin: 20px 0px;
+        text-align: center; 
+        background-color: $main-color;  
+    }
+    
+}
+
+/* SERVICIOS @MEDIA */
+
+@media (min-width: 1024px){
+    .subtitleServicios{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 45px 0px;
+    }
+
+    .articleservicios{        
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        
+        .div_servicios{
+            display: flex;
+            flex-direction: column;
+            width: 485px;
+            height: 520px;
+            margin: 20px 50px;
+            text-align: center; 
+            background-color: #e9e3e3; 
+
+            .pServicios{
+                font-size: 19px;
+            }
+        }
+    }
+        
+}
