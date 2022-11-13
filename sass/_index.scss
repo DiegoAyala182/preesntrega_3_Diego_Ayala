@@ -1,17 +1,14 @@
-$main-color: #c4c4c4;
-$sec-color:darkgreen;
-$color-contenedores: #dcdddc;
-$font-main: 'Barlow Semi Condensed', sans-serif;
+@use "globales";
 
 /* MAIN INDEX */
 .fontMain{
-    font-family: $font-main;
+    font-family: globales.$font-main;
 }
 
 .h1_mobile{
     text-align: center;
     margin: 30px 0px;
-    background-color: $main-color;    
+    background-color: globales.$main-color;    
 }
 
 .articleMain{
@@ -25,16 +22,16 @@ $font-main: 'Barlow Semi Condensed', sans-serif;
         justify-items: center;
         align-items: center;
         row-gap: 5px;
-        border: 1px solid $sec-color;
+        border: 1px solid globales.$sec-color;
         border-radius: 15px;
         width: 330px;
         height: 360px;
         margin: 20px 0px;
         text-align: center; 
-        background-color: $color-contenedores;  
+        background-color: globales.$color-contenedores;  
         
         .subtitleMain{
-            color: $sec-color;
+            color: globales.$sec-color;
         }
 
         .pMain{

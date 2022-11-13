@@ -1,7 +1,5 @@
-$main-color: #c4c4c4;
-$sec-color:darkgreen;
-$color-contenedores: #dcdddc;
-$font-main: 'Barlow Semi Condensed', sans-serif;
+@use "globales";
+
 
 /* NUESTRA FLOTA */
 .articleFlota{
@@ -21,12 +19,12 @@ $font-main: 'Barlow Semi Condensed', sans-serif;
     justify-items: center;
     align-items: center;
     row-gap: 5px;
-    border: 1px solid $sec-color;
+    border: 1px solid globales.$sec-color;
     border-radius: 15px;
     width: 330px;
     margin: 40px 0px;
     text-align: center; 
-    background-color:$color-contenedores;
+    background-color:globales.$color-contenedores;
 }
 
 .divFlota_1{
@@ -58,8 +56,8 @@ $font-main: 'Barlow Semi Condensed', sans-serif;
             flex-direction: row;
             align-items:center;
             justify-content: center;
-            background-color: $color-contenedores;
-            border: 1px solid $sec-color;
+            background-color: globales.$color-contenedores;
+            border: 1px solid globales.$sec-color;
             border-radius: 5px;
             width: 1000px;
             height: 840px;   

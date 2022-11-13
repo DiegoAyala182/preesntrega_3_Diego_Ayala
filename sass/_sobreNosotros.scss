@@ -1,7 +1,4 @@
-$main-color: #c4c4c4;
-$sec-color:darkgreen;
-$color-contenedores: #dcdddc;
-$font-main: 'Barlow Semi Condensed', sans-serif;
+@use "globales";
 
 /* SOBRE NOSOTROS */
 .articleSobreNosotros{
@@ -18,11 +15,11 @@ $font-main: 'Barlow Semi Condensed', sans-serif;
 
 .h2nuestraVsion{
     margin: 50px 0px;
-    color: $sec-color;
+    color: globales.$sec-color;
 }
 
 .colorGris{
-    background-color: $color-contenedores;
+    background-color: globales.$color-contenedores;
     opacity: 0.9;
 }
 
@@ -31,9 +28,9 @@ $font-main: 'Barlow Semi Condensed', sans-serif;
     .h1_visto{
         display: flex;
         justify-content: center;
-        font-family: $font-main;
+        font-family: globales.$font-main;
         font-size: 50px;
-        text-shadow: -1px 3px 3px $sec-color;
+        text-shadow: -1px 3px 3px globales.$sec-color;
         color: black;
         background-color: transparent;
         margin: 60px 0px 60px 0px;

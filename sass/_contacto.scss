@@ -1,7 +1,4 @@
-$main-color: #c4c4c4;
-$sec-color:darkgreen;
-$color-contenedores: #dcdddc;
-$font-main: 'Barlow Semi Condensed', sans-serif;
+@use "globales";
 
 /* CONTACTO */
 .sectionForm{
@@ -13,9 +10,9 @@ $font-main: 'Barlow Semi Condensed', sans-serif;
         flex-direction: column;
         width: 300px;
         padding: 20px;
-        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-family: globales.$font-main;
         font-size: 20px;
-        background-color: #e9e3e3;
+        background-color: globales.$color-contenedores;
         border-radius: 30px;
         margin-bottom: 85px;
 
@@ -52,10 +49,10 @@ $font-main: 'Barlow Semi Condensed', sans-serif;
                 border-radius: 6px;
                 border: 1px solid black;    
                 text-align: center;
-                background-color: $color-contenedores;   
+                background-color: globales.$color-contenedores;   
                 &:hover{
                     background-color: rgb(105, 105, 105);
-                    color: $color-contenedores;  
+                    color: globales.$color-contenedores;  
                 }
 
                 input{
