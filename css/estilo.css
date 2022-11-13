@@ -288,15 +288,15 @@ button:hover .button-text {
 }
 
 @media (min-width: 1024px) {
-  .formulario {
+  .sectionForm .formulario {
     width: 600px;
     height: 580px;
   }
-  .formulario .textarea {
+  .sectionForm .formulario .textarea {
     height: 400px;
     margin-top: 40px;
   }
-  .formulario .button_size {
+  .sectionForm .formulario .button_size {
     height: 30px;
     width: 120px;
     border-radius: 10px;
