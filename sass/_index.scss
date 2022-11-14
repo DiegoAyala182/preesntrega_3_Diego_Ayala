@@ -154,8 +154,27 @@ button {
 			margin: 20px 50px;
 			text-align: center; 
 			background-color: #e9e3e3; 
+
+			animation-name: rotate;
+			animation-duration: 0.7s;
+			animation-delay: 2s;
 		}  
 		
+		@keyframes rotate {
+			0% {
+			transform: rotate(0);
+			}
+			100% {
+			transform: rotate(360deg);
+			}
+		}
+		
+		@for $item from 1 through 3{
+			.div_main:nth-child(#{$item}) {
+			animation-delay: $item*0.2s;
+			}
+			
+		}
 		button{
 			margin-bottom: 15px;        
 		}
