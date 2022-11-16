@@ -90,7 +90,7 @@ body {
   Footer {
     grid-area: 4/1/4/5;
   }
-  /* HEADER */
+  /* HEADER DESKTOP*/
   .logoDesktop {
     width: 280px;
     height: 160px;
@@ -272,6 +272,7 @@ button:hover .button-text {
   color: #ffffff;
 }
 
+/* INDEX DESKTOP */
 @media (min-width: 1024px) {
   .h1_transparente {
     background-color: transparent;
@@ -340,6 +341,7 @@ button:hover .button-text {
   opacity: 0.9;
 }
 
+/* SOBRE NOSOTROS DESKTOP */
 @media (min-width: 1024px) {
   .h1_visto {
     display: flex;
@@ -395,7 +397,7 @@ button:hover .button-text {
   height: 180px;
 }
 
-/* @MEDIA NUESTRA FLOTA */
+/* NUESTRA FLOTA DESKTOP */
 @media (min-width: 1024px) {
   .sectionFlota {
     display: flex;
@@ -531,6 +533,7 @@ button:hover .button-text {
   border: 1px solid black;
 }
 
+/* CONTACTO DESKTOP */
 @media (min-width: 1024px) {
   .sectionForm .formulario {
     width: 600px;
