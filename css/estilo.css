@@ -547,18 +547,7 @@ button:hover .button-text {
     border: 1px solid black;
   }
 }
-/* SERVICIOS */
-.subtitleServicios {
-  color: darkgreen;
-}
-
-.articleservicios {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.articleservicios .div_servicios {
+.articleservicios .div_servicios4, .articleservicios .div_servicios3, .articleservicios .div_servicios2, .articleservicios .div_servicios1 {
   display: grid;
   justify-items: center;
   align-items: center;
@@ -572,7 +561,18 @@ button:hover .button-text {
   background-color: #c4c4c4;
 }
 
-/* SERVICIOS @MEDIA */
+/* SERVICIOS */
+.subtitleServicios {
+  color: darkgreen;
+}
+
+.articleservicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+/* SERVICIOS DESKTOP */
 @media (min-width: 1024px) {
   .subtitleServicios {
     display: flex;
@@ -586,7 +586,7 @@ button:hover .button-text {
     justify-content: center;
     margin-top: 50px;
   }
-  .articleservicios .div_servicios {
+  .articleservicios .div_desktop {
     display: flex;
     flex-direction: column;
     width: 485px;
@@ -595,7 +595,7 @@ button:hover .button-text {
     text-align: center;
     background-color: #e9e3e3;
   }
-  .articleservicios .div_servicios .pServicios {
+  .articleservicios .div_desktop .pServicios {
     font-size: 19px;
   }
 }

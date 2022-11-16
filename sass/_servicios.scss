@@ -1,5 +1,19 @@
 @use "globales";
 
+%cajas{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 5px;
+    border: 1px solid globales.$sec-color;
+    border-radius: 15px;
+    width: 330px;
+    height: 465px;
+    margin: 20px 0px;
+    text-align: center; 
+    background-color: globales.$main-color;  
+}
+
 /* SERVICIOS */
 .subtitleServicios{
     color: globales.$sec-color;
@@ -11,23 +25,20 @@
     align-items: center;
     justify-content: space-between;
 
-    .div_servicios{
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        row-gap: 5px;
-        border: 1px solid globales.$sec-color;
-        border-radius: 15px;
-        width: 330px;
-        height: 465px;
-        margin: 20px 0px;
-        text-align: center; 
-        background-color: globales.$main-color;  
+    .div_servicios1{
+        @extend %cajas;
     }
-    
+    .div_servicios2{
+        @extend %cajas;
+    }
+    .div_servicios3{
+        @extend %cajas;
+    }
+    .div_servicios4{
+        @extend %cajas;
+    }
 }
-
-/* SERVICIOS @MEDIA */
+/* SERVICIOS DESKTOP */
 
 @media (min-width: 1024px){
     .subtitleServicios{
@@ -43,7 +54,7 @@
         justify-content: center;
         margin-top: 50px;
         
-        .div_servicios{
+        .div_desktop{
             display: flex;
             flex-direction: column;
             width: 485px;
