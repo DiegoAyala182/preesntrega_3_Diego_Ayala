@@ -436,6 +436,7 @@ button:hover .button-text {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    margin-top: 5px;
   }
   .sectionFlota .articleFlota .divImgFlota .contenedorImg img {
     width: 100%;
